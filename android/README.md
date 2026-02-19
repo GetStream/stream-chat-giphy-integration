@@ -14,7 +14,7 @@ This sample project demonstrates how to build a custom Giphy picker carousel tha
 ## Demo
 
 <p align="center">
-  <video src="assets/giphy-picker-demo.mp4" width="300" controls></video>
+  <img src="assets/giphy-picker-demo.gif" width="300" alt="Giphy Picker Demo">
 </p>
 
 ## Dependencies
@@ -83,21 +83,21 @@ You can obtain your own credentials by creating a free account at [getstream.io]
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        MessagesActivity                          │
+│                        MessagesActivity                         │
 │  ┌───────────────────────────────────────────────────────────┐  │
-│  │                      ChatTheme                             │  │
-│  │  - componentFactory: GiphyChatComponentFactory             │  │
-│  │  - attachmentFactories: [customGiphyAttachmentFactory]     │  │
+│  │                        ChatTheme                          │  │
+│  │  - componentFactory: GiphyChatComponentFactory            │  │
+│  │  - attachmentFactories: [customGiphyAttachmentFactory]    │  │
 │  │  ┌─────────────────────────────────────────────────────┐  │  │
-│  │  │                  MessagesScreen                      │  │  │
+│  │  │                    MessagesScreen                   │  │  │
 │  │  │  ┌───────────────────────────────────────────────┐  │  │  │
-│  │  │  │     MessageComposer (via ComponentFactory)    │  │  │  │
+│  │  │  │    MessageComposer (via ComponentFactory)     │  │  │  │
 │  │  │  │  ┌─────────────────────────────────────────┐  │  │  │  │
-│  │  │  │  │            GiphyPicker                   │  │  │  │  │
-│  │  │  │  │  (animated carousel above composer)     │  │  │  │  │
+│  │  │  │  │              GiphyPicker                │  │  │  │  │
+│  │  │  │  │   (animated carousel above composer)    │  │  │  │  │
 │  │  │  │  └─────────────────────────────────────────┘  │  │  │  │
 │  │  │  │  ┌─────────────────────────────────────────┐  │  │  │  │
-│  │  │  │  │     Default MessageComposer UI          │  │  │  │  │
+│  │  │  │  │      Default MessageComposer UI         │  │  │  │  │
 │  │  │  │  │  [GIF Button] [Input Field] [Send]      │  │  │  │  │
 │  │  │  │  └─────────────────────────────────────────┘  │  │  │  │
 │  │  │  └───────────────────────────────────────────────┘  │  │  │
